@@ -2,7 +2,7 @@ node_modules
 npm-debug.log
 demo
 !src/demo
-dist
+# dist
 yarn-error.log
 .idea
 .vscode

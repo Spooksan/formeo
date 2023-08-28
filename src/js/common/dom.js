@@ -421,6 +421,7 @@ class DOM {
           },
           children: option.label,
         }
+
         const inputWrap = {
           children: [input, optionLabel],
           className: [`f-${fieldType}`],
@@ -437,10 +438,10 @@ class DOM {
         if (option.selected) {
           input.attrs.checked = true
         }
-
-        if (isPreview) {
-          optionLabel.attrs.contenteditable = true
-        }
+        // commented the following line to disable direct label editing in the form builder
+        // if (isPreview) {
+        //   optionLabel.attrs.contenteditable = true
+        // }
 
         return inputWrap
       }
